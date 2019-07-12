@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		6057CDB42289A5D400286908 /* JHPinterestFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6057CDB22289A5D400286908 /* JHPinterestFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6057CDBB2289A5E200286908 /* JHPinterestFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6057CDBA2289A5E200286908 /* JHPinterestFlowLayout.swift */; };
+		6057CDBD2289A60300286908 /* JHPinterestFlowLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6057CDBC2289A60300286908 /* JHPinterestFlowLayoutDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6057CDAF2289A5D400286908 /* JHPinterestFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JHPinterestFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6057CDB22289A5D400286908 /* JHPinterestFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHPinterestFlowLayout.h; sourceTree = "<group>"; };
 		6057CDB32289A5D400286908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6057CDBA2289A5E200286908 /* JHPinterestFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHPinterestFlowLayout.swift; sourceTree = "<group>"; };
+		6057CDBC2289A60300286908 /* JHPinterestFlowLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHPinterestFlowLayoutDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				6057CDB22289A5D400286908 /* JHPinterestFlowLayout.h */,
+				6057CDBA2289A5E200286908 /* JHPinterestFlowLayout.swift */,
+				6057CDBC2289A60300286908 /* JHPinterestFlowLayoutDelegate.swift */,
 				6057CDB32289A5D400286908 /* Info.plist */,
 			);
 			path = JHPinterestFlowLayout;
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					6057CDAE2289A5D400286908 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6057CDBB2289A5E200286908 /* JHPinterestFlowLayout.swift in Sources */,
+				6057CDBD2289A60300286908 /* JHPinterestFlowLayoutDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +270,7 @@
 		6057CDB82289A5D400286908 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +288,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tokijh.com.JHPinterestFlowLayout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +297,7 @@
 		6057CDB92289A5D400286908 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
